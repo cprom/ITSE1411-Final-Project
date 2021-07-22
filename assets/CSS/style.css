@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #161618;
+    color: rgb(232, 232, 232);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;
+    margin: auto;
+    padding: auto;
+  }
+
+.navbar {
+    padding: 20px;
+}
+
+.contact-btn {
+    border:2px solid #35CDA7;
+    width: 90px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.contact-btn a {
+    color: white;
+}
+
+.contact-btn:hover {
+    border: 2px solid #8D68FA;
+    transition: .5s;
+
+}
+
+.contact-btn a:hover {
+    color: white;
+}
+
+.main-logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+
+}
+
+.main-title {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 40px;
+    
+}
+
+.main-title:hover {
+    color: #35CDA7;
+    transform:skew(-35deg);
+    transition: .3s;
+    filter: blur(.7px);
+}
+
+ img {
+    width: 4.5em;
+    height: auto;
+}
+
+ul {
+    display: inline;
+    vertical-align: top;
+    float: right;
+    padding-top: 12px;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    margin-right: 20px;
+    
+    
+}
+
+a {
+    color: #35CDA7;
+    text-decoration: none;
+}
+a:hover {
+    color: #8D68FA;
+    transition: .5s;
+    
+}
+
+a:visited {
+    color: none;
+}
+
+main > h3 {
+    margin-top: 30px;
+    text-align: center;
+    background: #8D68FA;
+    width: 1000px;
+    height: 25px;
+    margin: auto;
+    margin-top: 60px;
+    padding: auto;
+    -webkit-box-shadow: 0px 29px 29px -4px rgba(0,0,0,0.34); 
+    box-shadow: 0px 29px 29px -4px rgba(0,0,0,0.34);
+    border-radius: 50px;
+}
+
+
+.main-content {
+    margin: auto;
+    padding: auto;
+    margin-top: 50px;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight:600;
+    height: auto;
+}
+
+.grid-container{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: .5rem;
+
+    
+}
+
+.grid-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+}
+
+footer {
+    height: 120px;
+    margin-top: 10vh;
+    padding-top: 10px;
+    text-align: center;
+    background: #8D68FA;
+}
+
