@@ -146,3 +146,19 @@ footer {
     background: #8D68FA;
 }
 
+.social-icons img{
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.social-icons img:hover{
+    transform:rotate(25deg);
+    transition: .3s;
+    
+    
+}
+
+
+
+
