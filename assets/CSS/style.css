@@ -4,12 +4,14 @@
     list-style: none;
 }
 
+
 body {
+    position: relative;
     background: #161618;
     color: rgb(232, 232, 232);
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
-    max-width: 1400px;
+    width: 80%;
+    min-height: 100%;
     margin: auto;
     padding: auto;
   }
@@ -66,6 +68,10 @@ body {
     height: auto;
 }
 
+.cb200t-img {
+    width: 100%;
+}
+
 ul {
     display: inline;
     vertical-align: top;
@@ -115,36 +121,68 @@ main > h3 {
     margin: auto;
     padding: auto;
     margin-top: 50px;
-    height: 300px;
+    height: 500px;
     width: 400px;
     text-align: center;
     font-size: 4.5em;
     font-weight:600;
     height: auto;
 }
+.the-bike-main {
+    display: grid;
+    margin: auto;
+    padding: auto;
+    margin-top: 50px;
+    width: 500px;
+    
+    font-size: 1.2em;
+    font-weight:300;
+    height: auto;
+}
+
+.the-bike-main > div{
+    margin: 10px;
+    padding: 20px;
+
+}
 
 .grid-container{
-    margin-top: 70px;
     display: grid;
+    margin-top: 70px;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: .5rem;
+    padding-bottom: 200px;
 
-    
 }
 
 .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-container{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: .7rem;
+
+}
+
+.gallery-items img {
         width: 100%;
         height: auto;
         object-fit: cover;
 }
 
-footer {
-    height: 120px;
-    margin-top: 10vh;
-    padding-top: 10px;
-    text-align: center;
-    background: #8D68FA;
+.gallery-items img:hover {
+    
+    transform:scale(2);
+    height: auto;
+    object-fit: cover;
+    transition: 1s;
 }
+
 
 .social-icons img{
     margin-top: 15px;
@@ -155,9 +193,20 @@ footer {
 .social-icons img:hover{
     transform:rotate(25deg);
     transition: .3s;
-    
-    
+      
 }
+
+footer { 
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    padding-top: 10px;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50vh;
+}
+
 
 
 
