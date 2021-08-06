@@ -12,29 +12,59 @@
     
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-            <a href="./cpindex.html"><img class="main-logo" src="./assets/Images/cafe-racer-logo-white.png" alt="" /></a>
-            <h1 class="main-title">Project Coffee Racer</h1>
-        <ul>
-            <li><a href="./cpindex.html">Home</a></li>
-            <li><a href="./the_bike.html">The Bike</a></li>
-            <li><a href="./build.html">The Build</a></li>
-            <li><a href="./parts.html">The Parts</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./video.html">Videos</a></li>
-            <li><a href="./other_projects.html">Other Projects</a></li>
-            <li class="contact-btn"><a href="./contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <!-- Navbar -->
+   
 
-    <main>
-        <h3 class="title-bar">Contact</h3>
-            <div class=main-content>
-                Coming Soon...
-            </div>
-    </main>
+    <section class="gallery-wrapper">
+       <!-- Nav Bar -->
+    <nav class="navbar">
+      <a href="./cpindex.html"><img class="main-logo" src="./assets/Images/cafe-racer-logo-white.png" alt="" /></a>
+      <h1 class="main-title">Project Coffee Racer</h1>
+  <ul>
+      <li><a href="./cpindex.html">Home</a></li>
+      <li><a href="./the_bike.html">The Bike</a></li>
+      <li><a href="./build.html">The Build</a></li>
+      <li><a href="./parts.html">The Parts</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./video.html">Videos</a></li>
+      <li><a href="./other_projects.html">Other Projects</a></li>
+      <li class="contact-btn"><a href="./contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+<!-- Navbar -->
+<br>
+<br>
+        <h3 class="title-bar">Contact Us</h3>
+        <section id="contacts" class="sections-title contacts">
+            <form action="mailto:chen.prom@gmail.com?subject=Project Coffee Racer Info" name="myForm" method="POST" enctype="text/plain">
+                <br>
+             <p class="contact-info">For more info send us an email</p>
+              <div class="form-group">
+                <label for="name"></label>
+                <input type="text" class="form-control" id="name" aria-describedby="fullName" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="Email"
+                  aria-describedby="emailHelp" required>
+                <p id="emailHelp" class="email-disclaimer">We'll never share your email with anyone else.</p>
+              </div>
+              <div>
+                <label for="newsletter"></label>
+                <input class="newsletter" type="checkbox" id="newsletter" >
+                <span id="newsletter" >Click here to get our news letter!</span>
+              </div>
+                <div class="form-group">
+                  <label for="Textarea"></label>
+                  <textarea class="form-control"  name=" " id="Textarea" rows="10" placeholder="Please enter message"></textarea>
+                </div>
+                <div class="form-btn">
+                  <button type="submit" class="btn" onClick="thankYou()">Submit</button>
+                </div>
+            </form>
+          </section>
+
+
+    </section>
     <footer>
         <p>&copy; Chen Prom 2021</p>
         <div class="social-icons">
@@ -43,5 +73,23 @@
              <a href="https://www.instagram.com/fuzzilogicdottech/" target="#"><img  src="./assets/Images/instagram.png" alt="" /></a>
         </div>
      </footer>
+
+     <script>
+     
+         function thankYou(){
+             const validName = document.getElementById("name")
+             const validEmail = document.getElementById("email")
+             if (!validName.checkValidity() || !validEmail.checkValidity()) {
+                 alert("Please fill out needed info")
+             }else {
+                 alert("Thank you for your submission!")
+             }
+
+         }
+
+
+     </script>
+
+     
 </body>
 </html>
