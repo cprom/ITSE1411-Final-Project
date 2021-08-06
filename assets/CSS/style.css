@@ -2,27 +2,51 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 
 body {
-    position: relative;
+    position: absolute;
     background: #161618;
     color: rgb(232, 232, 232);
     font-family: 'Roboto', sans-serif;
     width: 80%;
     min-height: 100%;
-    margin: auto;
-    padding: auto;
+  
+  }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    
+  }
+
+  
+.wrapper {
+      position: relative;
+      
   }
 
 .navbar {
     padding: 20px;
+    width: 100vw;
+   
+}
+
+nav.nav-home {
+    background: rgba(0, 0, 0, 0.4);
+    padding-bottom: 30px;
+    
 }
 
 .contact-btn {
     border:2px solid #35CDA7;
-    width: 90px;
+    width: 100px;
     text-align: center;
     border-radius: 50px;
 }
@@ -66,10 +90,12 @@ body {
  img {
     width: 4.5em;
     height: auto;
+    
 }
 
 .cb200t-img {
     width: 100%;
+    border-radius: 20px;
 }
 
 ul {
@@ -84,7 +110,6 @@ li {
     vertical-align: top;
     padding: 5px;
     margin-right: 20px;
-    
     
 }
 
@@ -102,24 +127,27 @@ a:visited {
     color: none;
 }
 
-main > h3 {
+
+
+h3.title-bar {
     margin-top: 30px;
     text-align: center;
     background: #8D68FA;
-    width: 1000px;
+    width: 50%;
     height: 25px;
-    margin: auto;
     margin-top: 60px;
+    margin: auto;
     padding: auto;
     -webkit-box-shadow: 0px 29px 29px -4px rgba(0,0,0,0.34); 
     box-shadow: 0px 29px 29px -4px rgba(0,0,0,0.34);
-    border-radius: 50px;
+    border-radius: 7px;
+    
 }
 
-
 .main-content {
-    margin: auto;
-    padding: auto;
+    position: relative;
+    margin-left: 10vw;
+    padding: 0;
     margin-top: 50px;
     height: 500px;
     width: 400px;
@@ -127,6 +155,7 @@ main > h3 {
     font-size: 4.5em;
     font-weight:600;
     height: auto;
+    
 }
 .the-bike-main {
     display: grid;
@@ -134,9 +163,8 @@ main > h3 {
     padding: auto;
     margin-top: 50px;
     width: 500px;
-    
     font-size: 1.2em;
-    font-weight:300;
+    font-weight:300px;
     height: auto;
 }
 
@@ -152,6 +180,8 @@ main > h3 {
     grid-template-columns: auto auto auto auto auto;
     grid-gap: .5rem;
     padding-bottom: 200px;
+    
+   
 
 }
 
@@ -159,28 +189,42 @@ main > h3 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    
+}
+
+.gallery-wrapper {
+    display: grid;
+    width: 100vw;
+    margin-top: 20px;
+   
 }
 
 .gallery-container{
     margin-top: 70px;
+    margin: 20px 150px;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: .7rem;
-
+    justify-content: center;
+    align-content:center;
+    
+    
 }
 
 .gallery-items img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: 20px;
 }
 
 .gallery-items img:hover {
-    
-    transform:scale(2);
+    transform:scale(1.5);
     height: auto;
     object-fit: cover;
     transition: 1s;
+
 }
 
 
@@ -196,18 +240,295 @@ main > h3 {
       
 }
 
+.parts-items img{
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+    
+}
+
+
 footer { 
-    position: absolute;
-    left: 0;
-    /* bottom: 0; */
+    position: relative;
     padding-top: 10px;
     height: 120px;
-    width: 100%;
+    width: 100vw;
     text-align: center;
-    margin-top: 50vh;
+    margin-top: 30vh;
+    margin:auto;
+    padding:auto;
 }
 
 
 
+/* Tables  */
+table img {
+    width: 15vw;
+    height: auto;
+    border-radius: 20px;
+    
+}
 
+table {
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
+    border: none;
+    border-spacing: 15px;
+}
+
+table td, th {
+   padding: 25px;
+   border: 1px solid #35CDA7;
+   border-radius: 10px;
+ 
+}
+
+
+/* Form CSS */
+
+#contacts {
+   
+    margin: auto;
+    padding: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    border-radius: 10px;
+    background: #161618;
+    box-shadow:   5px 5px 10px #0d0d0f,
+                  -5px -5px 10px #1f1f21;
+             
+}
+
+.form-group {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input {
+    padding: 20px;
+    border: none;
+    height: 35px;
+    width: 90%;
+    border-radius: 10px;
+    color:#35CDA7;
+    background: #161618;
+    outline: none;
+    box-shadow:   inset 5px 5px 10px #0d0d0f,
+                  inset -5px -5px 10px #1f1f21;
+}
+
+div > input.newsletter {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+textarea.form-control {
+    width: 90%;
+    max-width: 90%;
+    max-height: 250px;
+    font-size: 1.2em;
+    color: #35CDA7;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #161618;
+    box-shadow:   inset 5px 5px 10px #0d0d0f,
+                  inset -5px -5px 10px #1f1f21;
+
+}
+
+button.btn {
+    background: #35CDA7;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    border:none;
+}
+
+button.btn:hover {
+    box-shadow: 0px 0px 10px #35CDA7;
+    transition: .5s;
+}
+
+.email-disclaimer {
+    margin-top: 10px;
+    color:rgb(96, 96, 96)
+}
+
+/* Build page CSS*/
+
+.flex-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    padding:auto;
+    width: 90%;
+    
+    
+}
+
+.flex-container > div {
+    padding: 30px;
+    border: 1px solid #35CDA7;
+    margin: 10px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 15px;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+
+.flex-container > div h3 {
+    color: #35CDA7;
+}
+
+.flex-container > div img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Other Projects CSS */
+
+.other-projects {
+    padding-top: 40px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-size: 4em;
+    color: #35CDA7;
+}
+
+.other-projects > img{
+    width: 400px;
+    border-radius: 20px;
+    
+}
+
+nav img.main-logo {
+    position: relative;
+    animation: moveLogo 5s 1;
+}
+
+@keyframes moveLogo {
+    from {right: 0px; }
+    0% {left: 10px;}
+    50% {left: 10px; transform:rotate(-20deg)}
+    to {left: 100%; }
+}
+
+/*  Media Query */
+
+@media only screen and (max-width: 910px) {
+    nav ul li a{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      border: 1px solid #35CDA7;
+      width: 60vw;
+      margin: auto;
+      padding: auto;
+      background: #35CDA7;
+      filter: opacity(.5);
+      color: white;
+      font-size: 25px;
+      height: 50px;
+      border-radius: 10px;
+    }
+    
+    section.wrapper {
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section.gallery-wrapper {
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-btn {
+        border: none;
+        width: 70vw;
+        height: 40px;
+        text-align: center;
+        border-radius: 0px;
+        margin: auto;
+        padding: auto;
+        margin-right: 20px;
+    }
+
+    li.contact-btn:hover {
+        border: none;
+    }
+    .contact-btn:hover a {
+        
+        color: #8D68FA;
+        transition: .5s;
+    
+    }
+    
+    
+    .gallery-container{
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+
+  }
+
+  .gallery-items > iframe {
+     width: 70vw;
+     height: auto;
+     margin: auto;
+     padding: auto;
+  }
+
+  nav.nav-home {
+    background: none;
+    padding-bottom: 30px;
+    
+}
+
+.main-content {
+    position: relative;
+    
+    margin: auto;
+    padding: auto;
+    margin-top: 50px;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight:600;
+    height: auto;
+    
+}
+}
 
